@@ -1,0 +1,128 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/fondo_login3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:background="@drawable/fondo_tarjeta"
+        android:elevation="8dp"
+        android:padding="28dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+
+        <!-- Imagen de perfil -->
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/perfil_default"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/circle_background"
+            android:padding="3dp"
+            android:elevation="6dp" />
+
+        <!-- Bienvenida -->
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:text="Hola, Usuario"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:layout_marginBottom="28dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0.05" />
+
+        <!-- Botones -->
+        <Button
+            android:id="@+id/btnClientes"
+            android:text="📋 Lista de Clientes"
+            android:backgroundTint="@color/purple_700"
+            android:textColor="@android:color/white"
+            android:padding="16dp"
+            android:layout_marginBottom="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            android:fontFamily="sans-serif-medium"
+            android:elevation="6dp"
+            android:stateListAnimator="@null"
+            android:background="@drawable/btn_rounded_purple" />
+
+        <Button
+            android:id="@+id/btnPagos"
+            android:text="💰 Próximos Pagos"
+            android:backgroundTint="@color/purple_700"
+            android:textColor="@android:color/white"
+            android:padding="16dp"
+            android:layout_marginBottom="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            android:fontFamily="sans-serif-medium"
+            android:elevation="6dp"
+            android:stateListAnimator="@null"
+            android:background="@drawable/btn_rounded_purple" />
+
+        <Button
+            android:id="@+id/btnNuevoCliente"
+            android:text="➕ Agregar Cliente"
+            android:backgroundTint="@color/teal_700"
+            android:textColor="@android:color/white"
+            android:padding="16dp"
+            android:layout_marginBottom="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            android:fontFamily="sans-serif-medium"
+            android:elevation="6dp"
+            android:stateListAnimator="@null"
+            android:background="@drawable/btn_rounded_teal" />
+
+        <Button
+            android:id="@+id/btnCuentasAgrupadas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver cuentas compartidas"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor= "@android:color/white"
+            android:backgroundTint="#E0E0E0"
+            android:padding="14dp"
+            android:elevation="2dp"
+            android:layout_marginBottom="18dp"
+            android:stateListAnimator="@null"
+            android:background="@drawable/btn_rounded_gray" />
+
+        <Button
+            android:id="@+id/btnExportar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📤 Exportar Clientes"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/purple_700"
+            android:textColor="@android:color/white"
+            android:padding="16dp"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            android:fontFamily="sans-serif-medium"
+            android:elevation="6dp"
+            android:stateListAnimator="@null"
+            android:background="@drawable/btn_rounded_purple" />
+
+    </LinearLayout>
+</ScrollView>
